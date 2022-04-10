@@ -1,11 +1,17 @@
-#!/bin/python
-
-#Using platform to display OS, python version, processor, OS type, username, Java version, version
+#!/usr/bin/python3
 
 import platform
 
-print(f"The OS running in this machine is {platform.system()}.")
-print(f"The processor in this system is {platform.processor()}.")
-print(f"The USername of this system is {platform.uname()}.")
-print(f"The Java version available in this system is {platform.java_ver()}.")
-print(f"The version is {platform.version()}.")
+#Using platform to display OS, python version, processor, username, Java version, version
+
+sys = platform.system()
+processor = platform.processor()
+uname = platform.uname()
+java_version = platform.java_ver()
+version = platform.version()
+
+print(f"The OS running in this system is {sys}.")
+print(f"The processor in this system is {processor}.")
+print(f"The username of this system is {uname}.")
+print(f"The Java version available in this system is {java_version}.")
+print(f"The version is {version}.")
