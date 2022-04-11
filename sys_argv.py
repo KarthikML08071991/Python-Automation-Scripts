@@ -1,5 +1,10 @@
 import sys
 
+if len(sys.argv) != 3:
+    print("Expected: ")
+    print(f"{sys.argv[0]} <"String in quotes"> <lower | upper | title>")
+    sys.exit()
+    
 usr_data = sys.argv[1]
 usr_choice = sys.argv[2]
 
