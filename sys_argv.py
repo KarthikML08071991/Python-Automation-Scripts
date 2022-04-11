@@ -1,5 +1,10 @@
 import sys
 
+if len(sys.argv) != 3:
+    print("Expected: ")
+    print(f"{sys.argv[0]} <"String in quotes"> <lower | upper | title>")
+    sys.exit()
+
 print("Enter a string to be converted as first argument and the choice: lower or upper or title to be converted to as the second argument.")
 
 usr_data = sys.argv[1]
